@@ -1,0 +1,30 @@
+{
+  "name": "blockchain-gaming-platform",
+  "version": "1.0.0",
+  "description": "Full-stack blockchain gaming platform with NFT assets",
+  "scripts": {
+    "install-all": "npm run install-backend && npm run install-blockchain && npm run install-frontend",
+    "install-backend": "cd backend && npm install",
+    "install-blockchain": "cd blockchain && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "compile": "cd blockchain && npx truffle compile",
+    "migrate": "cd blockchain && npx truffle migrate --network development",
+    "deploy": "npm run compile && npm run migrate",
+    "start-backend": "cd backend && npm start",
+    "start-frontend": "cd frontend && npm start",
+    "dev-backend": "cd backend && npm run dev",
+    "test-contracts": "cd blockchain && npx truffle test"
+  },
+  "keywords": [
+    "blockchain",
+    "gaming",
+    "nft",
+    "ethereum",
+    "web3",
+    "react",
+    "nodejs",
+    "truffle"
+  ],
+  "author": "",
+  "license": "ISC"
+}
